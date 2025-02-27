@@ -1,0 +1,43 @@
+# Author Info
+# GitHub: AscendantDestiny
+# Discord: ???
+
+# Maintainer Info
+# GitHub: ???
+# Discord: ???
+
+# Shuttle Notes:
+# 
+- type: vessel
+  id: Fleming
+  name: Fleming
+  description: A small medical vessel equipped with Chem.
+  price: 20000
+  category: Small
+  group: Shipyard
+  shuttlePath: /Maps/_NF/Shuttles/fleming.yml
+  guidebookPage: ShipyardPlacebo
+  class:
+  - Medical
+  engine:
+  - Plasma
+
+- type: gameMap
+  id: Fleming
+  mapName: 'Fleming'
+  mapPath: /Maps/_NF/Shuttles/Fleming.yml
+  minPlayers: 0
+  stations:
+    Fleming:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Fleming {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            Contractor: [ 0, 0 ]
+            Pilot: [ 0, 0 ]
+            Mercenary: [ 0, 0 ]

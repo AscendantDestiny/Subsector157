@@ -1,0 +1,32 @@
+- type: vessel
+  id: Gumshoe
+  name: Gumshoe
+  description: Small attack vessel used for boarding and transport of prisoners. Specifically good for Detectives.
+  price: 15000 #not sure how much mark up % to add but the appraisal is 14000$ now
+  category: Small
+  group: Custom
+  access: Security
+  mapchecker_group_override: Security  # Treat this as a security vessel for mapchecker purposes
+  shuttlePath: /Maps/_NF/Shuttles/Nfsd/Gumshoe.yml
+  guidebookPage: Null
+  class:
+  - Fighter
+  engine:
+  - APU
+
+- type: gameMap
+  id: Gumshoe
+  mapName: 'Gumshoe'
+  mapPath: /Maps/_NF/Shuttles/Nfsd/Gumshoe.yml
+  minPlayers: 0
+  stations:
+    Gumshoe:
+      stationProto: StandardFrontierSecurityVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Gumshoe {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs: {}

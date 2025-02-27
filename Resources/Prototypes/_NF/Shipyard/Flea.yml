@@ -1,0 +1,43 @@
+# Author Info
+# GitHub: AscendantDestiny
+# Discord: 
+
+# Maintainer Info
+# GitHub: AscendantDestiny
+# Discord: 
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: Flea
+  name: Flea
+  description: A small transport shuttle with space for 7. 
+  price: 17500 # $16634 after appraisal + ~5% markup
+  category: Small
+  group: Shipyard
+  shuttlePath: /Maps/_NF/Shuttles/Flea.yml
+  guidebookPage: Null
+  class:
+  - Civilian
+  engine:
+  - Plasma
+
+- type: gameMap
+  id: Flea
+  mapName: 'Flea'
+  mapPath: /Maps/_NF/Shuttles/Flea.yml
+  minPlayers: 0
+  stations:
+    Flea:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Flea {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            Contractor: [ 0, 0 ]
+            Pilot: [ 0, 0 ]
+            Mercenary: [ 0, 0 ]
