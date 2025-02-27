@@ -1,0 +1,40 @@
+# Maintainer Info
+# GitHub: AscendantDestiny
+# Discord: 
+
+# Shuttle Notes:
+# 
+
+- type: vessel
+  id: Carver
+  name: Carver
+  description: "All you need to set sail on your very own Booze Cruise"
+  price: 80000 # TODO: fix these values, getting tests to pass - Whatstone
+  category: Medium
+  group: Shipyard
+  shuttlePath: /Maps/_NF/Shuttles/carver.yml
+  guidebookPage: ShipyardCarver
+  class:
+  - Kitchen
+  engine:
+  - Plasma
+
+- type: gameMap
+  id: Carver
+  mapName: 'Carver'
+  mapPath: /Maps/_NF/Shuttles/Carver.yml
+  minPlayers: 0
+  stations:
+    Carver:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Carver {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            Contractor: [ 0, 0 ]
+            Pilot: [ 0, 0 ]
+            Mercenary: [ 0, 0 ]

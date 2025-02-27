@@ -1,0 +1,36 @@
+# Author Info
+# GitHub: AscendantDestiny
+# Discord: 
+
+# Maintainer Info
+# GitHub: ???
+# Discord: ???
+
+# Notes:
+# Guns, cigarettes and alcohol. what could go wrong?
+- type: pointOfInterest
+  id: Gas&GunAlpha
+  name: "Gigi's Gas&Gun"
+  minimumDistance: 3250
+  maximumDistance: 5600
+  spawnGroup: Scrapyard
+  gridPath: /Maps/_NF/POI/gasandgunalpha.yml
+  addComponents:
+  - type: IFF
+    color: "#ffa600"
+    readOnly: true
+  - type: Shuttle
+    angularDamping: 999999
+    linearDamping: 999999
+
+- type: gameMap
+  id: Gas&GunAlpha
+  mapName: "Gigi's Gas&Gun"
+  mapPath: /Maps/_NF/POI/gasandgunalpha.yml
+  minPlayers: 0
+  stations:
+    Gasandgunalpha:
+      stationProto: DeadDropRecordsFrontierOutpost
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Gigi's Gas&Gun"

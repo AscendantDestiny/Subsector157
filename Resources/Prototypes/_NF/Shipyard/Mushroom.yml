@@ -1,0 +1,43 @@
+# Author Info
+# GitHub: AscendantDestiny
+# Discord: ???
+
+# Maintainer Info
+# GitHub: ???
+# Discord: ???
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: Mushroom
+  name: Mushroom
+  description: A small mining vessel designed to assist salvage operations.
+  price: 24500
+  category: Small
+  group: Shipyard
+  shuttlePath: /Maps/_NF/Shuttles/mushroom.yml
+  guidebookPage: ShipyardProspector
+  class:
+  - Salvage
+  engine:
+  - Plasma
+
+- type: gameMap
+  id: Mushroom
+  mapName: 'NC Mushroom'
+  mapPath: /Maps/_NF/Shuttles/Mushroom.yml
+  minPlayers: 0
+  stations:
+    Mushroom:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Mushroom {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            Contractor: [ 0, 0 ]
+            Pilot: [ 0, 0 ]
+            Mercenary: [ 0, 0 ]

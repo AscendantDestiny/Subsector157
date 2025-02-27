@@ -1,0 +1,37 @@
+# Author Info
+# GitHub: AscendantDestiny
+# Discord: 
+
+# Maintainer Info
+# GitHub: 
+# Discord: 
+
+# Notes:
+# So you've met with a terrible fate haven't you?
+- type: pointOfInterest
+  id: Imhotep
+  name: "Imhotep's Bar&Grill"
+  minimumDistance: 1200
+  maximumDistance: 2900
+  spawnGroup: RestStop
+  gridPath: /Maps/_NF/POI/imhotep.yml
+  addComponents:
+  - type: IFF
+    color: "#ffa600"
+    readOnly: true
+  - type: Shuttle
+    angularDamping: 999999
+    linearDamping: 999999
+  - type: StationTransit
+
+- type: gameMap
+  id: Imhotep
+  mapName: "Imhotep's Bar&Grill"
+  mapPath: /Maps/_NF/POI/imhotep.yml
+  minPlayers: 0
+  stations:
+    Imhotep:
+      stationProto: DeadDropFrontierOutpost
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Imhotep's Bar&Grill"
