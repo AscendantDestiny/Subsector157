@@ -1,16 +1,16 @@
 # Author Info
-# GitHub: Tych0theSynth (https://github.com/tych0thesynth)
-# Discord: Tych0
+# GitHub: AscendantDestiny 
+# Discord: 
 
 # Maintainer Info
-# GitHub: Tych0theSynth (https://github.com/tych0thesynth)
-# Discord: Tych0
+# GitHub: 
+# Discord:
 
 # Notes:
-# I want to lie, shipwrecked and comatose, drinking fresh mango juice.
+# Absolutely no talk of the incident regarding bobo the bear. Those who gossip are subject to immediate termination. 
 - type: pointOfInterest
-  id: Bahama
-  name: "Bahama Mama's"
+  id: Imhotep
+  name: "Imhotep's Bar and Grill"
   rangeMin: 1200
   rangeMax: 2900
   IFFColor: "#ffa600" #yellorange for faction style
@@ -20,7 +20,7 @@
 
 - type: gameMap
   id: Bahama
-  mapName: "Bahama Mama's"
+  mapName: "Imhotep's Bar and grill"
   mapPath: 
   minPlayers: 0
   stations:
@@ -28,4 +28,4 @@
       stationProto: DeadDropFrontierOutpost
       components:
         - type: StationNameSetup
-          mapNameTemplate: "Bahama Mama's"
+          mapNameTemplate: "Imhotep's Bar and grill"
